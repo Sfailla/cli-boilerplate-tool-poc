@@ -6,9 +6,11 @@
   },
   "parser": "@typescript-eslint/parser",
   "parserOptions": {
-    "project": "tsconfig.json",
+    "project": "./tsconfig.json",
     "sourceType": "module",
-    "ecmaVersion": 2020
+    "ecmaVersion": 2020,
+    "tsconfigRootDir": ".",
+    "extraFileExtensions": [".js"]
   },
   "plugins": ["@typescript-eslint", "jest"],
   "extends": [
@@ -22,6 +24,6 @@
     // examples, and because it is not a recommended rule, you should either
     // disable it, or understand what it enforces.
     // https://typescript-eslint.io/rules/explicit-function-return-type/
-    "@typescript-eslint/explicit-function-return-type": "warn"
+    "@typescript-eslint/explicit-function-return-type": "off"
   }
 }
