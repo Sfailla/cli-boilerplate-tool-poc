@@ -10,7 +10,7 @@
     "sourceType": "module",
     "ecmaVersion": 2020,
     "tsconfigRootDir": ".",
-    "extraFileExtensions": [".js"]
+    "extraFileExtensions": [".js", ".ts"]
   },
   "plugins": ["@typescript-eslint", "jest"],
   "extends": [
